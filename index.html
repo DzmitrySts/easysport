@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная - EasySport</title>
+    <link rel="stylesheet" href="styles.css">
+<style>
+        /* Стили для блока матча (можно настроить) */
+        .live_block2 {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px;
+            width: 400px;
+        }
+
+        .match_a {
+          display: block;
+          text-decoration: none;
+          color: inherit; /* Наследовать цвет текста от родителя */
+          
+        }
+
+        .align_center {
+            display: flex;
+            align-items: center;
+            justify-content: center; /* для горизонтального выравнивания */
+            padding: 5px 0;
+        }
+
+         .right {
+             display: flex;
+             justify-content: space-between;
+             align-items: center; /* Выравниваем вертикально */
+          }
+
+        .left_team, .right_team {
+           display: flex;
+           align-items: center;
+        }
+
+        .score {
+           font-size: 1.2em;
+           font-weight: bold;
+           margin: 0 10px;
+        }
+
+        .team_title {
+             margin: 0 5px;
+             font-weight: bold;
+        }
+
+        .circle_team {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          overflow: hidden;
+        }
+
+        .team_logo {
+          max-width: 100%;
+          height: auto; /* Сохраняет пропорции */
+          display: block; /* Устраняет лишние отступы снизу */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>EasySport</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="football.html">Футбол</a>
+        <a href="hockey.html">Хоккей</a>
+        <a href="basketball.html">Баскетбол</a>
+        <a href="tennis.html">Теннис</a>
+        <a href="martial_arts.html">Единоборства</a>
+    </nav>
+
+    <div class="content">
+        <div id="player-container">
+            <h2>Главная</h2>
+        </div>
+    </div>
+<div class="live_block2">
+    <a href="/match/1336855" class="match_a align_center">
+        <div class="right">
+            <div class="left_team align_center">
+                <span class="team_title team_title_left">
+                    Видзев
+                </span>
+                <div class="circle_team align_center"><img src="https://media.api-sports.io/football/teams/6962.png" alt="Видзев" class="team_logo logo_left" loading="lazy"></div>
+            </div>
+            <div class="score align_center">
+                3 - 5
+            </div>
+            <div class="right_team align_center">
+                <div class="circle_team align_center"><img src="https://cdn.lbs.pw/football/teams/345.png" alt="Заглембе" class="team_logo logo_right" loading="lazy"></div>
+                <span class="team_title team_title_right">
+                    Заглембе
+                </span>
+            </div>
+        </div>
+    </a>
+  </div>
+</body>
+</html>

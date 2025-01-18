@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('banner.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+header {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 10px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+nav a:hover {
+    background: white;
+    color: black;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+h2 {
+    color: white;
+    text-shadow: 2px 2px 4px black;
+}

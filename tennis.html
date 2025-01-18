@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Теннис - EasySport</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #player-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+            margin: 20px auto;
+            width: 890px; /* Ширина плеера */
+        }
+
+        #player-container h2 {
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            margin-bottom: 15px;
+        }
+         #PLAYER_DOM_ID {
+            width: 890px;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>EasySport</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="football.html">Футбол</a>
+        <a href="hockey.html">Хоккей</a>
+        <a href="basketball.html">Баскетбол</a>
+        <a href="tennis.html">Теннис</a>
+        <a href="martial_arts.html">Единоборства</a>
+    </nav>
+
+    <div class="content">
+        <div id="player-container">
+            <h2>Теннис</h2>
+            <div id="PLAYER_DOM_ID"></div>
+           <script src="http://bradmax.com/client/files/player-js/73a9716fd26717763cd2d46fb9e41463645853de_14815/bradmax_player.js"></script>
+           <script type="text/javascript">
+                var config = {
+                    dataProvider: {
+                        source: [
+                            { url: "http://vpr7lwxy.socminlt.org/iptv/ZPF9HZDVC4R2HTWGENFG7CBR/6079/index.m3u8" }
+                        ]
+                    },
+                    "aspectRatio": "16:9", // Добавляем параметр aspectRatio
+                    "stretchMode": "uniform" // Добавляем параметр stretchMode
+                 };
+
+                // Найти контейнер плеера в HTML DOM
+                var element = document.getElementById("PLAYER_DOM_ID");
+
+                // Создать плеер
+                var player = window.bradmax.player.create(element, config);
+            </script>
+        </div>
+    </div>
+</body>
+</html>
